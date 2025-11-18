@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="coffeeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6f4e37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4a574;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 咖啡杯 -->
+  <path d="M 20 30 L 25 70 Q 25 80 35 80 L 65 80 Q 75 80 75 70 L 80 30 Z" 
+        fill="url(#coffeeGradient)" stroke="#3e2723" stroke-width="2"/>
+  
+  <!-- 咖啡液面 -->
+  <ellipse cx="50" cy="30" rx="30" ry="8" fill="#3e2723" opacity="0.8"/>
+  
+  <!-- 蒸汽 -->
+  <path d="M 35 20 Q 33 15 35 10" stroke="#d4a574" stroke-width="2" 
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 50 18 Q 48 13 50 8" stroke="#d4a574" stroke-width="2" 
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 65 20 Q 63 15 65 10" stroke="#d4a574" stroke-width="2" 
+        fill="none" stroke-linecap="round" opacity="0.7"/>
+  
+  <!-- 杯子手柄 -->
+  <path d="M 80 35 Q 90 35 90 45 Q 90 55 80 55" 
+        stroke="#6f4e37" stroke-width="3" fill="none"/>
+</svg>

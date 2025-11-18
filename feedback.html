@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Reviews - Inti Cafe">
+    <title>Customer Reviews - Inti Cafe</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-coffee"></i>
+                <span>Inti Cafe</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="feedback.html" class="active">Reviews</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Customer Reviews</h1>
+            <p>Hear what our customers have to say</p>
+        </div>
+    </section>
+
+    
+    <!-- Feedback Form Section -->
+    <section class="feedback-form-section">
+        <div class="container">
+            <div class="feedback-wrapper">
+                <div class="feedback-intro">
+                    <h2>Share Your Experience</h2>
+                    <p>Your feedback is very important to us and helps us continuously improve our service quality.</p>
+                    <div class="feedback-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&h=400&fit=crop" alt="Coffee latte art display">
+                    </div>
+                </div>
+
+                <div class="feedback-form-wrapper">
+                    <form class="feedback-form" id="feedbackForm">
+                        <div class="form-group">
+                            <label for="customerName">
+                                <i class="fas fa-user"></i> Your Name *
+                            </label>
+                            <input type="text" id="customerName" name="customerName" required placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerEmail">
+                                <i class="fas fa-envelope"></i> Email Address *
+                            </label>
+                            <input type="email" id="customerEmail" name="customerEmail" required placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="visitDate">
+                                <i class="fas fa-calendar"></i> Visit Date
+                            </label>
+                            <input type="date" id="visitDate" name="visitDate">
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <i class="fas fa-star"></i> Overall Rating *
+                            </label>
+                            <div class="rating-input">
+                                <input type="radio" id="star5" name="rating" value="5" required>
+                                <label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+                                
+                                <input type="radio" id="star4" name="rating" value="4">
+                                <label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+                                
+                                <input type="radio" id="star3" name="rating" value="3">
+                                <label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+                                
+                                <input type="radio" id="star2" name="rating" value="2">
+                                <label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+                                
+                                <input type="radio" id="star1" name="rating" value="1">
+                                <label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedbackCategory">
+                                <i class="fas fa-list"></i> Feedback Type *
+                            </label>
+                            <select id="feedbackCategory" name="feedbackCategory" required>
+                                <option value="">Select feedback type</option>
+                                <option value="coffee">Coffee Quality</option>
+                                <option value="service">Service</option>
+                                <option value="environment">Atmosphere</option>
+                                <option value="price">Pricing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="feedbackText">
+                                <i class="fas fa-comment-dots"></i> Detailed Feedback *
+                            </label>
+                            <textarea id="feedbackText" name="feedbackText" rows="6" required placeholder="Share your experience and suggestions..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="recommend" name="recommend">
+                            <label for="recommend">I would recommend to friends</label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="allowPublish" name="allowPublish">
+                            <label for="allowPublish">Allow public display of my feedback</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Submit Feedback
+                        </button>
+                    </form>
+                    <div id="feedbackMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Inti Cafe is dedicated to providing you with the finest coffee experience</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.html">Reviews</a></li>
+                    </ul>
+                </div>
+                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Inti Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
